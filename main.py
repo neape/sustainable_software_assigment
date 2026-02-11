@@ -5,7 +5,7 @@ from collections import defaultdict
 import sys
 
 # Configuration
-API_KEY = ""   # <-- Fingrid API key
+API_KEY = "your api-key here"   # Fingrid API key here
 datasetId = 265
 URL = f"https://data.fingrid.fi/api/datasets/{datasetId}/data"
 HEADERS = {"x-api-key": API_KEY}
@@ -108,7 +108,7 @@ else:
 
 # Plot
 plt.figure(figsize=(10,5))
-plt.plot(times, values)
+plt.plot(times, values, marker='.', linestyle='-', color='green')
 plt.xlabel("Time")
 plt.ylabel("Emission factor (gCO₂/kWh)")
 plt.title(f"Emission factor for electricity consumed in Finland (past {choice})")

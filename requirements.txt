@@ -1,0 +1,4 @@
+Required Python libraries:
+
+Matplotlib
+Requests
